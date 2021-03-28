@@ -133,6 +133,7 @@ header {
 }
 
 .introducao h2 {
+    font-family: cursive ;
     font-size: 20px;
 }
 
@@ -198,13 +199,10 @@ header {
 
 } 
 
-.borda h2 {
-    
 
-}
 .borda a {
 
-    color: black;
+    color: red;
     padding: 10px 0;
 
 }
