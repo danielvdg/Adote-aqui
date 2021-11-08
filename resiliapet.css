@@ -24,8 +24,6 @@ body {
     
     background-color: rgb(16, 187, 199);
 
-    
-
 
 }
 
@@ -92,8 +90,7 @@ header {
 .menuLista a {
 
     text-decoration: none; 
-    color: black;
-     
+    color: black;     
 
 }
 
@@ -116,8 +113,14 @@ header {
 .imgpetShop {
 
     margin-top: 5%;
+    
 
 
+}
+
+.imgAbaixoDolayout{
+    border: 3px solid purple;
+    border-radius: 30px;
 }
 
 .introducao {
@@ -133,14 +136,15 @@ header {
 }
 
 .introducao h2 {
-    font-family: cursive ;
+    font-family: cursive;
     font-size: 20px;
 }
 
 .adocao {
     
-    width: 100%;
-    height: 700px;    
+    width: 95%;
+    height: 700px;
+    padding: 30px;    
 
     display: flex;
     justify-content: space-around;
@@ -162,7 +166,7 @@ header {
 
     padding: 10px;
     
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
 
     
@@ -171,14 +175,9 @@ header {
 }
 
 .borda {
-    
-
     border: 3px solid black;
     background-color: #b49d27d2;
     border-radius: 10px;
-   
-
-    
 
     padding: 10px;
 
@@ -194,8 +193,7 @@ header {
 .borda img {
 
     width: 90%;
-
-    padding: 10px;    
+    padding: 0;
 
 } 
 
@@ -217,6 +215,16 @@ header {
     color: aqua;
 }
 
+.cartaz{
+
+    border: 2px solid deeppink;
+    border-radius: 109px;
+    width: 210px;
+    height: 200px; 
+    
+    padding: 0px;
+}
+
 
 
 .infoCatalago a {
@@ -226,13 +234,6 @@ header {
 }
 
 
-.catalago img {
-
-    width: 210px;
-    height: 200px;   
-
-    
-}
 
 .catalago a {
 
@@ -263,9 +264,9 @@ footer img {
 }
 
 
-@media screen and (max-width: 700px){
 
-
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
     header {
         
         display: flex;    
@@ -338,6 +339,7 @@ footer img {
 
     .borda img {
         width: 80%;
+        padding: 0;
 
     }
     
@@ -368,6 +370,430 @@ footer img {
         height: 200px;        
         
     }
+ }
 
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
     
+    header {
+        
+        display: flex;    
+        flex-direction: column;
+        
+    }
+
+        
+    .logo a {
+      width: 100%;
+
+      background-color: black;
+      color: white;
+      
+
+    }
+
+    .menu  {
+
+        width: 100%;
+        height: 20%;   
+
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+
+        background-color: black;
+        align-items: center;
+
+        
+        
+                
+    }
+
+    .menu:hover {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .menuLista {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .menuLista:hover{
+
+        height: 20%;
+        
+    }
+
+    .adocao {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    .menuLista a {
+        width: 100%;
+
+        color: white; 
+        
+               
+        
+    }
+
+    .borda img {
+        width: 80%;
+        padding: 0;
+
+    }
+    
+    
+    .catalago {
+        width: 100%;
+        
+
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .borda {
+        width: 40%;
+        height: 290px ;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    
+    footer {
+
+        width: 100%;
+        height: 200px;        
+        
+    }
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    header {
+        
+        display: flex;    
+        flex-direction: column;
+        
+    }
+
+        
+    .logo a {
+      width: 100%;
+
+      background-color: black;
+      color: white;
+      
+
+    }
+
+    .menu  {
+
+        width: 100%;
+        height: 20%;   
+
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+
+        background-color: black;
+        align-items: center;
+
+        
+        
+                
+    }
+
+    .menu:hover {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .menuLista {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .menuLista:hover{
+
+        height: 20%;
+        
+    }
+
+    .adocao {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    .menuLista a {
+        width: 100%;
+
+        color: white; 
+        
+               
+        
+    }
+
+    .borda img {
+        width: 80%;
+        padding: 0;
+
+    }
+    
+    
+    .catalago {
+        width: 100%;
+        
+
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .borda {
+        width: 40%;
+        height: 290px ;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    
+    footer {
+
+        width: 100%;
+        height: 200px;        
+        
+    }
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    header {
+        
+        display: flex;    
+        flex-direction: column;
+        
+    }
+
+        
+    .logo a {
+      width: 100%;
+
+      background-color: black;
+      color: white;
+      
+
+    }
+
+    .menu  {
+
+        width: 100%;
+        height: 20%;   
+
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        
+
+        background-color: black;
+        align-items: center;
+
+        
+        
+                
+    }
+
+    .menu:hover {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .menuLista {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .menuLista:hover{
+
+        height: 20%;
+        
+    }
+
+    .adocao {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    .menuLista a {
+        width: 100%;
+
+        color: white; 
+        
+               
+        
+    }
+
+    .borda img {
+        width: 80%;
+        padding: 0;
+
+    }
+    
+    
+    .catalago {
+        width: 100%;
+        
+
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .borda {
+        width: 40%;
+        height: 290px ;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    
+    footer {
+
+        width: 100%;
+        height: 200px;        
+        
+    }
+ }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    header {
+        
+        display: flex;    
+        flex-direction: column;
+        
+    }
+
+        
+    .logo a {
+      width: 100%;
+
+      background-color: black;
+      color: white;
+      
+
+    }
+
+    .menu  {
+
+        width: 100%;
+        height: 38%;
+
+        position: absolute;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+   
+    }
+
+    .menu:hover {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .menuLista {
+        width: 100%;
+        
+        text-align: center;
+    }
+
+    .menuLista:hover{
+
+        height: 20%;
+        
+    }
+
+    .adocao {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    .menuLista a {
+        width: 100%;
+
+        color: white; 
+        
+               
+        
+    }
+
+    .borda img {
+        width: 80%;
+        padding: 0;
+
+    }
+    
+    
+    .catalago {
+        width: 100%;
+        height: 400px;
+
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .borda {
+        width: 40%;
+        height: 370px ;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+    
+    footer {
+
+        width: 100%;
+        height: 200px;        
+        
+    }
 }
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
